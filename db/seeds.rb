@@ -3,6 +3,7 @@
 #
 # removes pre-existing data when seeding database
 Food.destroy_all
+User.destroy_all
 
 # example seed
 Food.create(
@@ -13,3 +14,8 @@ Food.create(
     category: "A La Carte"
 )
 
+# example seed
+User.create(
+    email: "elibrown@gmail.com",
+    password: "elibrown"
+)
