@@ -1,6 +1,9 @@
 class FoodsController < ApplicationController
 
-    rescue_from ActiveRecord::RecordNotFound, with: :not_found
+    skip_before_action :authorize, only: [:index]
+
+    # rescue_from ActiveRecord::RecordNotFound, with: :not_found
+
 
     # returns all food instances
     def index
