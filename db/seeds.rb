@@ -38,6 +38,28 @@ Food.create(name: "Buffalo Chicken Tenders & Fries Combo (5pc)", price: 13.99, c
 
 puts "Done seeding apps!"
 
+puts "Seeding wings..."
+
+Food.create(name: "5 Wings", price: 7.99, category: "Wings")
+Food.create(name: "10 Wings", price: 14.49, category: "Wings")
+Food.create(name: "20 Wings", price: 26.99, category: "Wings")
+
+puts "Done seeding wings!"
+
+puts "Seeding salads..."
+
+Food.create(name: "Caesar", price: 8.99, category: "Salads", details: "Crispy romaine lettuce, house made croutons and Parmesan cheese")
+Food.create(name: "Grilled Chicken Caesar", price: 10.99, category: "Salads", details: "Our Caesar salad topped with fresh marinated, grilled chicken")
+Food.create(name: "Garden", price: 9.99, category: "Salads", details: "Mixed greens, tomato, onion, roasted peppers, croutons, cucumbers and a hard boiled egg")
+Food.create(name: "Buffalo Chicken Garden", price: 11.99, category: "Salads", details: "Our garden salad with chicken tenders tossed with hot sauce")
+Food.create(name: "Chef Garden", price: 11.99, category: "Salads", details: "Our garden salad with ham, turkey, provolone and american cheese")
+Food.create(name: "Tuna Salad Garden", price: 11.99, category: "Salads", details: "Our garden salad with a scoop of our homemade tuna salad")
+Food.create(name: "Chicken Salad Garden", price: 11.99, category: "Salads", details: "Our garden salad with a scoop of our homemade chicken salad")
+Food.create(name: "Greek Garden", price: 11.99, category: "Salads", details: "Our garden salad with Kalamata olives and feta cheese")
+Food.create(name: "Chicken Tender Garden", price: 11.99, category: "Salads", details: "Our garden salad with crispy chicken tenders & american cheese")
+
+puts "Done seeding salads!"
+
 # example seed
 User.create(
     email: "elibrown@gmail.com",
