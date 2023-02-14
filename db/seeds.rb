@@ -14,6 +14,10 @@ User.destroy_all
 #     category: "A La Carte"
 # )
 
+puts "Seeding categories..."
+Category.create(name: "Appetizers")
+Category.create(name: "Wings", description: "Tossed in sauce of your choice Mild, Hot or BBQ. Served with Celery & Bleu Cheese or Ranch")
+
 # appetizer seeds
 puts "Seeding apps..."
 
