@@ -7,6 +7,18 @@ class ApplicationController < ActionController::API
 
     def authorize
         @current_user ||= User.find_by(id: session[:user_id])
-        render json: {errors: "Not authorized"}, status: :unauthorized unless @current_user
+
+        if @current_user
+
+            @time_left = $expire_time - Time.now
+
+            unless @time_left > 0
+                session.delete(:user_id)
+            end
+
+        else
+            render json: {errors: "Not authorized"}, status: :unauthorized 
+        end
     end
+
 end
