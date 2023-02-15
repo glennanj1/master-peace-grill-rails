@@ -6,7 +6,7 @@ class SessionsController < ApplicationController
         user = User.find_by(email: params[:email])
 
         if user && user.authenticate(params[:password])
-            $expire_time = Time.now + 10.seconds
+            $expire_time = Time.now + 10.minutes
 
             session[:user_id] = user.id
             render json: user
