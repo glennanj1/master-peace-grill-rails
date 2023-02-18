@@ -4,6 +4,7 @@
 # removes pre-existing data when seeding database
 Food.destroy_all
 User.destroy_all
+Category.destroy_all
 
 # example seed
 # Food.create(
