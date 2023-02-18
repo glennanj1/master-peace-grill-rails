@@ -12,15 +12,21 @@ class FoodsController < ApplicationController
 
     # edit food instance by its id
     def update
+        #binding.pry
         food = Food.find(params[:id])
         food.update!(food_params)
         render json: food, status: :accepted
     end
 
+    def show 
+        food = Food.find(params[:id])
+        render json: food, status: :ok
+    end
+
     private
 
     def food_params
-        params.permit(:name, :price, :category, :add_ons, :details)
+        params.permit(:id, :name, :price, :category, :add_ons, :details)
     end
 
     def not_found
