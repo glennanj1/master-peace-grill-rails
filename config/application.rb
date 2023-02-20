@@ -31,7 +31,7 @@ module MasterPeaceGrillRails
     # config.middleware.use ActionDispatch::Cookies
     # config.middleware.use ActionDispatch::Session::CookieStore, key: '_johns_fine_cookies', same_site: :none, secure: true, expire_after: 10.seconds
     config.middleware.use ActionDispatch::Cookies
-    config.middleware.use ActionDispatch::Session::CookieStore, key: '_john_cookie', expire_after: 10.minutes , same_site: :none, secure: false
+    config.middleware.use ActionDispatch::Session::CookieStore, key: '_john_cookie', expire_after: 10.minutes , same_site: :none, secure: false, domain: :all, path: '/login'
     config.middleware.insert_after(ActionDispatch::Cookies, ActionDispatch::Session::CookieStore, key: '_john_cookie')
 
     # Use SameSite=Strict for all cookies to help protect against CSRF
