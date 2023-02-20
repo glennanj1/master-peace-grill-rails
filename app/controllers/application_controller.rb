@@ -10,12 +10,13 @@ class ApplicationController < ActionController::API
 
         if @current_user
 
-            @time_left = $expire_time - Time.now
+            # @time_left = $expire_time - Time.now
 
-            unless @time_left > 0
-                session.delete(:user_id)
-            end
+            # unless @time_left > 0
+            #     session.delete(:user_id)
+            # end
 
+            puts "User is logged in"
         else
             render json: {errors: "Not authorized"}, status: :unauthorized 
         end
