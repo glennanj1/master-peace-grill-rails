@@ -125,6 +125,44 @@ Food.create(name: "Southwest Turkey Burger", price: 11.99, category_id: @burgers
 
 puts "Done seeding burgers!"
 
+puts "Seeding Hoagies..."
+
+Food.create(name: "Italian Hoagie", price: 10.99, category_id: @hoagiesAndGrindersId, details: "Black Forest Ham, Capicola, Genoa Salami, Provolone, lettuce, tomato, onion, oil or mayo")
+Food.create(name: "Turkey BLT Hoagie", price: 10.99, category_id: @hoagiesAndGrindersId, details: "Sliced turkey, crispy bacon, lettuce, tomato and mayo")
+Food.create(name: "Chicken Parm Grinder", price: 10.99, category_id: @hoagiesAndGrindersId, details: "with Marinara sauce and provolone cheese")
+Food.create(name: "Buffalo Chicken Tender Hoagie", price: 10.99, category_id: @hoagiesAndGrindersId, details: "lettuce, tomato, hot sauce and choice of ranch or blue cheese")
+Food.create(name: "Chicken Tender Hoagie", price: 10.99, category_id: @hoagiesAndGrindersId, details: "Chicken tenders, honey mustard, American cheese, lettuce and tomato")
+Food.create(name: "Cuban Grinder", price: 10.99, category_id: @hoagiesAndGrindersId, details: "Pulled Pork, Black Forest ham, Swiss cheese, pickles and mustard")
+
+puts "Done seeding Hoagies..."
+
+puts "Seeding sandwiches..."
+
+Food.create(name: "BLT", price: 8.99, category_id: @sandwichesId, details: "BLT Crispy bacon, lettuce, tomato and mayo")
+Food.create(name: "BBQ Pork Sandwich", price: 9.49, category_id: @sandwichesId, details: "With onion and provolone cheese on a brioche bun")
+Food.create(name: "The Chumpy", price: 9.49, category_id: @sandwichesId, details: "Chicken, Bacon & PepperJack cheese with Ranch dressing served on a brioche bun with lettuce and tomato")
+Food.create(name: "Turkey Melt", price: 9.49, category_id: @sandwichesId, details: "Open face on rye with tomato, provolone cheese")
+Food.create(name: "Roast Beef Melt", price: 9.49, category_id: @sandwichesId, details: "Open face on rye with tomato, swiss cheese, Thousand Island dressing")
+Food.create(name: "The Drizzle", price: 9.49, category_id: @sandwichesId, details: "Chicken Salad on a brioche bun with crispy bacon and American cheese")
+Food.create(name: "Pizon Pork", price: 9.49, category_id: @sandwichesId, details: "Slow roasted pork with long hot peppers & Provolone cheeze on a grilled brioche bun")
+Food.create(name: "Grilled Chicken Deluxe", price: 9.49, category_id: @sandwichesId, details: "On a brioche bun with honey mustard, crispy bacon, American cheese, lettuce and tomato")
+Food.create(name: "Tuna Melt", price: 9.49, category_id: @sandwichesId, details: "Open face on rye with tomato, provolone cheese")
+
+puts "Done seeding sandwiches..."
+
+puts "Seeding Catering"
+
+Food.create(name: "CheeseSteak Tray", price: 15.99, category_id: @cateringId, details: "Cheesesteak, Chicken Cheesesteak, Tiger Steak, Buffalo Steak or Pizza Steak")
+Food.create(name: "Hoagie Tray", price: 14.99, category_id: @cateringId, details: "With onion and provolone cheese on a brioche bun")
+Food.create(name: "Small Caesar Salad", price: 50.00, category_id: @cateringId, details: "Chicken, Bacon & PepperJack cheese with Ranch dressing served on a brioche bun with lettuce and tomato")
+Food.create(name: "Small Garden Salad", price: 60.00, category_id: @cateringId, details: "Open face on rye with tomato, provolone cheese")
+Food.create(name: "Wrap Tray", price: 14.99, category_id: @cateringId, details: "Open face on rye with tomato, swiss cheese, Thousand Island dressing")
+Food.create(name: "Brioche Tray", price: 13.99, category_id: @cateringId, details: "Chicken Salad on a brioche bun with crispy bacon and American cheese")
+Food.create(name: "Large Caesar Salad", price: 75.00, category_id: @cateringId, details: "Slow roasted pork with long hot peppers & Provolone cheeze on a grilled brioche bun")
+Food.create(name: "Large Garden Salad", price: 80.00, category_id: @cateringId, details: "On a brioche bun with honey mustard, crispy bacon, American cheese, lettuce and tomato")
+
+puts "Done seeding Catering"
+
 # example seed
 User.create(
     email: "mike@masterpeacegrill.com",
