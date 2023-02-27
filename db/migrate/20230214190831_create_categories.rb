@@ -4,6 +4,10 @@ class CreateCategories < ActiveRecord::Migration[7.0]
       t.string :name
       t.string :description
       t.string :add_ons
+      t.boolean :cssClass
+      t.boolean :menuCategory
+      t.boolean :menuCategoryAndBYO
+      t.string :menuImage
 
       t.timestamps
     end
