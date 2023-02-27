@@ -16,7 +16,7 @@ Category.destroy_all
 # )
 
 puts "Seeding categories..."
-Category.create(name: "Appetizers", cssClass: true, menuCategory: true, menuCategoryAndBYO: false, menuImage: './../../images/menu/app.jpg')
+Category.create(name: "Appetizers", cssClass: true, menuCategory: true, menuCategoryAndBYO: false, menuImage: '/images/menu/app.jpg')
 Category.create(name: "Wings", description: "Tossed in sauce of your choice Mild, Hot or BBQ. Served with Celery & Bleu Cheese or Ranch", cssClass: false, menuCategory: true, menuCategoryAndBYO: false, menuImage: '/images/menu/wings.jpg')
 Category.create(name: "Salads", description: "Dressings: Ranch, Italian, Bleu Cheese, Honey Mustard, Caesars, Balsamic Vinaigrette, Oil & Vinegar or Thousand Island", cssClass: true, menuCategory: true, menuCategoryAndBYO: false, menuImage: '/images/menu/salad.jpg')
 Category.create(name: "Wraps $10.99", description: "Your Choice of White, Wheat, Spinach or Tomato Wrap", add_ons: "Add Long Hots $1.49. Turn any CheeseSteak into a wrap", cssClass: false, menuCategory: true, menuCategoryAndBYO: false, menuImage: '/images/menu/wrap.jpg')
@@ -25,7 +25,7 @@ Category.create(name: "CheeseSteaks $11.99", add_ons: "Extra Cheese $1. Extra Pe
 Category.create(name: "Burgers $10.99", add_ons: "Make it a combo $3.99. Add Long Hots $1. Add Bacon $1.99", cssClass: true, menuCategory: false, menuCategoryAndBYO: true, menuImage: '/images/menu/burger.jpg')
 Category.create(name: "Hoagies & Grinders $10.99", add_ons: "Add Long Hots $1.49", cssClass: false, menuCategory: false, menuCategoryAndBYO: true, menuImage: '/images/menu/hoagie.jpg')
 Category.create(name: "Sandwiches $8.99", cssClass: true, menuCategory: false, menuCategoryAndBYO: true, menuImage: '/images/menu/sandwhich.jpg')
-Category.create(name: "Grilled Cheese $5.49", description: "Your choice of White, Wheat or Rye", cssClass: false, menuCategory: false, menuCategoryAndBYO: true, menuImage: '/images/food/grilled_cheese.jpg')
+Category.create(name: "Grilled Cheese $5.49", description: "Your choice of White, Wheat or Rye", cssClass: false, menuCategory: false, menuCategoryAndBYO: true, menuImage: '/images/menu/grilled_cheese.jpg')
 Category.create(name: "Catering", description: "You Create - Includes Chips, Drinks and Napkins. Pricing Per Person", cssClass: true, menuCategory: false, menuCategoryAndBYO: true, menuImage: '/images/menu/catering.jpg')
 puts "Done seeding categories!"
 
