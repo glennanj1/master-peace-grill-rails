@@ -7,7 +7,8 @@ class FoodsController < ApplicationController
 
     # returns all food instances
     def index
-        render json: Food.all, status: :ok
+        #render food.all and category.all
+        render json: { foods: Food.all, categories: Category.all }, status: :ok
     end
 
     # edit food instance by its id
