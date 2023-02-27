@@ -18,13 +18,17 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_16_210835) do
     t.string "name"
     t.string "description"
     t.string "add_ons"
+    t.boolean "cssClass"
+    t.boolean "menuCategory"
+    t.boolean "menuCategoryAndBYO"
+    t.string "menuImage"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "foods", force: :cascade do |t|
     t.string "name"
-    t.float "price"
+    t.decimal "price", precision: 10, scale: 2
     t.text "add_ons"
     t.text "details"
     t.datetime "created_at", null: false
