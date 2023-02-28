@@ -8,6 +8,7 @@ class CreateCategories < ActiveRecord::Migration[7.0]
       t.boolean :menuCategory
       t.boolean :menuCategoryAndBYO
       t.string :menuImage
+      t.boolean :bestSeller, default: true
 
       t.timestamps
     end
