@@ -163,6 +163,12 @@ Food.create(name: "Large Garden Salad", price: 80.00, category_id: @cateringId, 
 
 puts "Done seeding Catering"
 
+Modal.create(
+    title: 'Test',
+    body: 'We are open closed up down sideways 12.1202302',
+    picture: '/images/logo/mpgLogo.png',
+    active: true
+)
 # example seed
 User.create(
     email: "mike@masterpeacegrill.com",
