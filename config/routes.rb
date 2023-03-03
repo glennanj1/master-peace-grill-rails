@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
+  resources :modals, only: [:index, :update]
   resources :categories, only: [:index, :update, :show]
   resources :foods, only: [:index, :update, :show]
-  resources :users
+  resources :users, only: [:update]
 
 
   post "/signup", to: "users#create"

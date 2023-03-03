@@ -25,8 +25,8 @@ Category.create(name: "CheeseSteaks $11.99", add_ons: "Extra Cheese $1. Extra Pe
 Category.create(name: "Burgers $10.99", add_ons: "Make it a combo $3.99. Add Long Hots $1. Add Bacon $1.99", cssClass: true, menuCategory: false, menuCategoryAndBYO: true, menuImage: '/images/menu/burger.jpg')
 Category.create(name: "Hoagies & Grinders $10.99", add_ons: "Add Long Hots $1.49", cssClass: false, menuCategory: false, menuCategoryAndBYO: true, menuImage: '/images/menu/hoagie.jpg')
 Category.create(name: "Sandwiches $8.99", cssClass: true, menuCategory: false, menuCategoryAndBYO: true, menuImage: '/images/menu/sandwhich.jpg')
-Category.create(name: "Grilled Cheese $5.49", description: "Your choice of White, Wheat or Rye", cssClass: false, menuCategory: false, menuCategoryAndBYO: true, menuImage: '/images/menu/grilled_cheese.jpg')
-Category.create(name: "Catering", description: "You Create - Includes Chips, Drinks and Napkins. Pricing Per Person", cssClass: true, menuCategory: false, menuCategoryAndBYO: true, menuImage: '/images/menu/catering.jpg')
+Category.create(name: "Grilled Cheese $5.49", description: "Your choice of White, Wheat or Rye", cssClass: false, menuCategory: false, menuCategoryAndBYO: true, menuImage: '/images/menu/grilled_cheese.jpg', bestSeller: false)
+Category.create(name: "Catering", description: "You Create - Includes Chips, Drinks and Napkins. Pricing Per Person", cssClass: true, menuCategory: true, menuCategoryAndBYO: false, menuImage: '/images/menu/catering.jpg', bestSeller: false)
 puts "Done seeding categories!"
 
 # make a variable for the id of each category
@@ -163,6 +163,12 @@ Food.create(name: "Large Garden Salad", price: 80.00, category_id: @cateringId, 
 
 puts "Done seeding Catering"
 
+Modal.create(
+    title: 'Test',
+    body: 'We are open closed up down sideways 12.1202302',
+    picture: '/images/logo/mpgLogo.png',
+    active: true
+)
 # example seed
 User.create(
     email: "mike@masterpeacegrill.com",
