@@ -22,7 +22,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_01_001030) do
     t.boolean "menuCategory"
     t.boolean "menuCategoryAndBYO"
     t.string "menuImage"
-    t.boolean "bestSeller", default: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -1,2 +1,3 @@
 class Modal < ApplicationRecord
+    
 end
