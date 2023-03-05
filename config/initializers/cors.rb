@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'http://localhost:3001', 'https://masterpeacegrill.netlify.app', 'https://www.masterpeacegrill.com', 'https://staging.masterpeacegrill.com', 'http://127.0.0.1:3001', 'https://masterpeacegrill.glennan.cloud'
+    origins 'http://localhost:3001', 'https://masterpeacegrill.netlify.app', 'https://www.masterpeacegrill.com', 'https://staging.masterpeacegrill.com', 'http://127.0.0.1:3001', 'https://masterpeacegrill.glennan.cloud, 'https://glennan.cloud'
 
     resource "*",
       headers: :any,
